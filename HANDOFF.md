@@ -8,7 +8,8 @@
 - Hero: their own after-photo (den's blue panelled wall) blurred under a navy overlay. White text measures 9.6:1+ against the brightest hero pixel, brass 4.9:1+.
 - H1 "Toms River homes, painted right." bounces in letter by letter; `.rise` fade-up below the first screen; both off under reduced motion and without JS.
 - Proof: draggable before/after slider (hallway, mouse/touch/arrow keys, vertical scroll still works over it), the den pair side by side, then "Click to see more of our work." → their Facebook.
-- Contact: the form composes a text to 732-305-5003 (chips Interior/Exterior/Trim/Wall patching, name required, town and details optional); a call fallback line appears if Messages doesn't open. Floating brass text circle shows after the hero and hides over the form. Tapping a service row ticks its chip.
+- Contact: the form composes a text to 732-305-5003 (chips Interior/Exterior/Trim/Wall patching, name required, town and details optional). On submit it also shows a fallback straight away (Open in Messages, Copy message, the written-out message, and a call line), because Facebook's in-app browser can block the sms: redirect. The floating brass text circle shows after the hero. It hides over the form, and it steps aside whenever a row arrow, the Facebook arrow or the slider knob is in the bottom strip where it sits. Tapping a service row ticks its chip.
+- `HousePainter` JSON-LD in the head (name, phone, email, Toms River, Facebook) for local search, since they have no Maps listing.
 - Images are separate files in `img/` (WebP, ~110 KB total) rather than base64 in the HTML; favicon and home-screen icon are the "C's" from their logo; `og.jpg` 1200×630 for Facebook previews.
 
 ## Assumptions I made
@@ -37,7 +38,12 @@
 - Worlds from the trade, for an opt-in signature motion: (1) **a wet roller stroke** that paints the hero from tan to their slate blue as you drag (best: it's literally their before/after); (2) brush strokes revealing each section's band; (3) the logo's waves rolling along the hero's bottom edge; (4) painter's tape that peels off to reveal the heading; (5) a colour-chip fan for the services.
 - A gallery page once they send more photos; exterior before/afters.
 - Name the lead painter in the hero promise once known.
-- Impeccable findings kept by choice: detector flags the diagonal band texture ("repeating-gradient stripes") and the eyebrow pills; both are house calm style.
+- Finish-review suggestions not taken:
+  - Drop the phone number from the footer, since it sits about 200px under the close band's big number. I didn't: finishing-rules allows the number in the close and the footer.
+  - Self-host Cal Sans instead of loading it from Google Fonts, for speed on cellular. I didn't: the house rule is Google Fonts. Worth doing on all sites at once if you want it.
+  - A header shadow on scroll. I didn't: the header isn't sticky, so it would never show.
+  - "More of our work on Facebook" instead of "Click to see more of our work.". I kept your wording and balanced the line instead.
+- Impeccable findings kept by choice: the craft floor bans eyebrow pills. The detector flags the diagonal band texture ("repeating-gradient stripes") and a "flat type hierarchy" (it only counts the small UI sizes). Both are suppressed for `index.html` in `.impeccable/config.json`, with the reasons written there.
 
 ## Not verified
 - Real-device touch on the slider (tested with Playwright Chromium and WebKit, mouse drag and keyboard).

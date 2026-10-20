@@ -1,0 +1,496 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-20T13:52:16+00:00",
+  "title": "Design System: Seven C's Paint Services LLC",
+  "extensions": {
+    "colorMeta": {
+      "brass": {
+        "role": "primary",
+        "displayName": "Harbour Brass",
+        "tonalRamp": [
+          "#250000",
+          "#441300",
+          "#633200",
+          "#845100",
+          "#a77200",
+          "#ca9326",
+          "#f2b954",
+          "#ffe480"
+        ],
+        "canonical": "oklch(79.1% 0.134 79)"
+      },
+      "brass-light": {
+        "role": "primary",
+        "displayName": "Polished Brass",
+        "tonalRamp": [
+          "#250000",
+          "#441300",
+          "#633200",
+          "#845100",
+          "#a77200",
+          "#ca9326",
+          "#f2b954",
+          "#ffe480"
+        ]
+      },
+      "brass-ink": {
+        "role": "primary",
+        "displayName": "Brass Ink",
+        "tonalRamp": [
+          "#1f0000",
+          "#3d1a00",
+          "#5c3700",
+          "#7c5510",
+          "#9e7537",
+          "#c09659",
+          "#e8bc7e",
+          "#ffe6a7"
+        ],
+        "canonical": "oklch(48.4% 0.094 76)"
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Logo Navy",
+        "tonalRamp": [
+          "#000430",
+          "#07214f",
+          "#223e6f",
+          "#3f5d91",
+          "#5e7db3",
+          "#7e9fd7",
+          "#a3c5ff",
+          "#ccf0ff"
+        ],
+        "canonical": "oklch(25.7% 0.091 261)"
+      },
+      "deep-navy": {
+        "role": "neutral",
+        "displayName": "Deep Navy",
+        "tonalRamp": [
+          "#000430",
+          "#07214f",
+          "#223e6f",
+          "#3f5d91",
+          "#5e7db3",
+          "#7e9fd7",
+          "#a3c5ff",
+          "#ccf0ff"
+        ]
+      },
+      "navy": {
+        "role": "neutral",
+        "displayName": "Mid Navy",
+        "tonalRamp": [
+          "#000136",
+          "#001f55",
+          "#1b3e76",
+          "#395d98",
+          "#587dbb",
+          "#789fdf",
+          "#9cc5ff",
+          "#c6f0ff"
+        ],
+        "canonical": "oklch(35.7% 0.105 260)"
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "tonalRamp": [
+          "#0a0b0e",
+          "#232428",
+          "#3e4044",
+          "#5c5d62",
+          "#7b7d82",
+          "#9c9ea3",
+          "#c2c4c9",
+          "#eceef3"
+        ],
+        "canonical": "oklch(97.3% 0.007 269)"
+      },
+      "light-band": {
+        "role": "neutral",
+        "displayName": "Light Band",
+        "tonalRamp": [
+          "#080b10",
+          "#21242a",
+          "#3c4046",
+          "#5a5e65",
+          "#797e85",
+          "#9a9fa6",
+          "#c0c4cc",
+          "#eaeff7"
+        ]
+      },
+      "card": {
+        "role": "neutral",
+        "displayName": "White Card",
+        "tonalRamp": [
+          "#0a0b0e",
+          "#232428",
+          "#3e4044",
+          "#5c5d62",
+          "#7b7d82",
+          "#9c9ea3",
+          "#c2c4c9",
+          "#eceef3"
+        ]
+      },
+      "field": {
+        "role": "neutral",
+        "displayName": "Field Blue",
+        "tonalRamp": [
+          "#080b11",
+          "#20242b",
+          "#3b4047",
+          "#595e66",
+          "#787e86",
+          "#999fa7",
+          "#bfc5cd",
+          "#e9eff8"
+        ],
+        "canonical": "oklch(94.1% 0.014 258)"
+      },
+      "body": {
+        "role": "neutral",
+        "displayName": "Body Slate",
+        "tonalRamp": [
+          "#020a20",
+          "#16243c",
+          "#31405b",
+          "#4e5e7b",
+          "#6d7e9c",
+          "#8e9fbe",
+          "#b3c5e6",
+          "#dcefff"
+        ],
+        "canonical": "oklch(32.1% 0.050 262)"
+      },
+      "soft": {
+        "role": "neutral",
+        "displayName": "Soft Slate",
+        "tonalRamp": [
+          "#030a1e",
+          "#19233a",
+          "#334058",
+          "#505e78",
+          "#6f7d99",
+          "#909fbc",
+          "#b5c5e3",
+          "#dfefff"
+        ],
+        "canonical": "oklch(46.0% 0.046 264)"
+      },
+      "on-dark": {
+        "role": "neutral",
+        "displayName": "Sea Mist",
+        "tonalRamp": [
+          "#0a0b0e",
+          "#232428",
+          "#3e4044",
+          "#5c5d62",
+          "#7b7d82",
+          "#9c9ea3",
+          "#c2c4c9",
+          "#eceef3"
+        ]
+      },
+      "on-dark-soft": {
+        "role": "neutral",
+        "displayName": "Soft Mist",
+        "tonalRamp": [
+          "#050b18",
+          "#1b2433",
+          "#374050",
+          "#545e6f",
+          "#737e90",
+          "#949fb2",
+          "#b9c5d9",
+          "#e3efff"
+        ],
+        "canonical": "oklch(86.7% 0.031 261)"
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "tonalRamp": [
+          "#000430",
+          "#07214f",
+          "#223e6f",
+          "#3f5d91",
+          "#5e7db3",
+          "#7e9fd7",
+          "#a3c5ff",
+          "#ccf0ff"
+        ]
+      },
+      "focus": {
+        "role": "neutral",
+        "displayName": "Focus Blue",
+        "tonalRamp": [
+          "#03004e",
+          "#001171",
+          "#003794",
+          "#1858b8",
+          "#3b7add",
+          "#5c9dff",
+          "#81c4ff",
+          "#aaf0ff"
+        ],
+        "canonical": "oklch(50.2% 0.164 259)"
+      },
+      "error": {
+        "role": "neutral",
+        "displayName": "Error Red",
+        "tonalRamp": [
+          "#3a0000",
+          "#600000",
+          "#860000",
+          "#ac1d17",
+          "#d2463a",
+          "#f96a5b",
+          "#ff927f",
+          "#ffbda8"
+        ],
+        "canonical": "oklch(50.1% 0.178 29)"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero H1 only, white, with the letter bounce-in."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section H2s."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Service rows, trust claims, link banner, step titles."
+      },
+      "title-sm": {
+        "displayName": "Title small",
+        "purpose": "Buttons, field labels and legends, header phone."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "Section introductions, max 40ch."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text and input text."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Before / After photo tags."
+      },
+      "small": {
+        "displayName": "Small",
+        "purpose": "Hints, helper and error text."
+      }
+    },
+    "shadows": [
+      {
+        "name": "knob-lift",
+        "value": "0 6px 18px rgba(6,32,78,.3)",
+        "purpose": "Before/after slider knob over the photo."
+      },
+      {
+        "name": "float-lift",
+        "value": "0 10px 28px rgba(6,24,56,.3)",
+        "purpose": "Fixed floating text circle."
+      }
+    ],
+    "surfaces": [
+      {
+        "name": "deep-texture",
+        "value": "repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px)",
+        "purpose": "Line texture on deep navy bands (how it works, footer)."
+      },
+      {
+        "name": "hero-wash",
+        "value": "linear-gradient(180deg,rgba(6,32,78,.82) 0%,rgba(6,32,78,.7) 55%,rgba(6,32,78,.88) 100%)",
+        "purpose": "Navy wash over the hero photo."
+      }
+    ],
+    "motion": [
+      {
+        "name": "letter-in",
+        "value": "1s cubic-bezier(.34,1.56,.64,1), 20ms stagger, from translateX(50px) opacity 0",
+        "purpose": "Hero H1 letter bounce-in, once, JS and motion-allowed only."
+      },
+      {
+        "name": "rise",
+        "value": "opacity and transform .4s ease-out, from translateY(12px)",
+        "purpose": "Fade-up for blocks that start below the first screen."
+      },
+      {
+        "name": "float-in",
+        "value": "transform .35s cubic-bezier(.2,.8,.2,1), from translateY(120px)",
+        "purpose": "Floating text circle entrance and exit."
+      },
+      {
+        "name": "state",
+        "value": ".15s to .2s",
+        "purpose": "Colour and border transitions on buttons, fields, chips, arrow discs."
+      },
+      {
+        "name": "press",
+        "value": "transform .12s, scale(.98)",
+        "purpose": "Button press."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "narrow",
+        "value": "max-width: 380px"
+      },
+      {
+        "name": "tablet",
+        "value": "760px"
+      },
+      {
+        "name": "desktop",
+        "value": "1024px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one action: brass pill with navy Cal Sans text.",
+      "html": "<a class=\"ds-btn ds-btn-primary\" href=\"#\">Schedule your free estimate</a>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:999px;font:400 18px/1 'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;text-decoration:none;cursor:pointer;border:2px solid transparent;transition:background-color .2s,color .2s,border-color .2s,transform .12s}.ds-btn:active{transform:scale(.98)}.ds-btn:focus-visible{outline:3px solid #1f5fbf;outline-offset:3px}.ds-btn-primary{background:#e8b04a;color:#06204e;border-color:#e8b04a}.ds-btn-primary:hover{background:#f0c26a;border-color:#f0c26a}"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Secondary action on dark grounds: outlined pill.",
+      "html": "<div class=\"ds-dark\"><a class=\"ds-btn-ghost\" href=\"#\">See our work</a></div>",
+      "css": ".ds-dark{background:#06204e;padding:24px}.ds-btn-ghost{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 26px;border-radius:999px;font:400 18px/1 'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;text-decoration:none;background:transparent;color:#f4f7fb;border:2px solid rgba(244,247,251,.7);transition:background-color .2s,border-color .2s}.ds-btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.1)}.ds-btn-ghost:focus-visible{outline:3px solid #e8b04a;outline-offset:3px}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input-text",
+      "description": "Filled field with Cal Sans label; Focus Blue border on hover and focus.",
+      "html": "<label class=\"ds-field\"><span class=\"ds-label\">Your name</span><input class=\"ds-input\" type=\"text\" placeholder=\"First name is fine\"></label>",
+      "css": ".ds-field{display:grid;gap:8px;max-width:420px}.ds-label{font:400 18px/1.2 'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;color:#06204e}.ds-input{width:100%;font:16px/1.4 -apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif;color:#06204e;background:#e6ecf5;border:2px solid transparent;border-radius:10px;padding:13px 14px;min-height:52px;transition:border-color .15s}.ds-input::placeholder{color:#4b5872}.ds-input:hover,.ds-input:focus{outline:none;border-color:#1f5fbf}"
+    },
+    {
+      "name": "Choice Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Checkbox chip; selected turns Logo Navy.",
+      "html": "<div class=\"ds-chips\"><label class=\"ds-chip\"><input type=\"checkbox\" checked><span>Interior</span></label><label class=\"ds-chip\"><input type=\"checkbox\"><span>Exterior</span></label></div>",
+      "css": ".ds-chips{display:flex;flex-wrap:wrap;gap:10px}.ds-chip input{position:absolute;width:1px;height:1px;opacity:0;margin:0}.ds-chip span{display:inline-flex;align-items:center;min-height:48px;padding:0 18px;border-radius:999px;background:#e6ecf5;border:2px solid transparent;font:16px/1 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:#06204e;cursor:pointer;transition:border-color .15s,background-color .15s,color .15s}.ds-chip span:hover{border-color:#1f5fbf}.ds-chip input:focus-visible+span{outline:3px solid #1f5fbf;outline-offset:2px}.ds-chip input:checked+span{background:#06204e;color:#fff}"
+    },
+    {
+      "name": "Form Card",
+      "kind": "card",
+      "refersTo": "form-card",
+      "description": "Flat white 24px card on paper holding the quote form.",
+      "html": "<div class=\"ds-paper\"><div class=\"ds-card\"><p class=\"ds-card-t\">What needs painting?</p><p class=\"ds-card-b\">Pick what needs painting and add your name.</p></div></div>",
+      "css": ".ds-paper{background:#f4f6fb;padding:24px}.ds-card{background:#fff;border-radius:24px;padding:32px;display:grid;gap:12px;max-width:600px}.ds-card-t{margin:0;font:400 18px/1.2 'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;color:#06204e}.ds-card-b{margin:0;font:16px/1.7 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:#4b5872}"
+    },
+    {
+      "name": "Service Link Row",
+      "kind": "nav",
+      "refersTo": "arrow-disc",
+      "description": "Full-width Cal Sans link row on navy; only the arrow disc turns brass.",
+      "html": "<div class=\"ds-navy\"><a class=\"ds-row\" href=\"#\">Interior painting<span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\"><path d=\"M5 12h14M13 6l6 6-6 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span></a></div>",
+      "css": ".ds-navy{background:#183a72;padding:0 24px}.ds-row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:76px;padding:12px 0;text-decoration:none;color:#f4f7fb;font:400 26px/1.15 'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;border-top:1px solid rgba(255,255,255,.14);border-bottom:1px solid rgba(255,255,255,.14);outline:none}.ds-arrow{width:44px;height:44px;flex:none;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.1);color:#f4f7fb;transition:background-color .2s,color .2s}.ds-row:hover .ds-arrow,.ds-row:focus-visible .ds-arrow{background:#e8b04a;color:#06204e}.ds-row:focus-visible .ds-arrow{outline:3px solid #e8b04a;outline-offset:3px}"
+    },
+    {
+      "name": "Before/After Slider",
+      "kind": "custom",
+      "refersTo": "",
+      "description": "Signature: clipped before image, brass divider and knob with lift shadow.",
+      "html": "<div class=\"ds-ba\"><div class=\"ds-ba-after\"></div><div class=\"ds-ba-before\"></div><span class=\"ds-tag ds-tag-l\">Before</span><span class=\"ds-tag ds-tag-r\">After</span><span class=\"ds-div\"></span><span class=\"ds-knob\" tabindex=\"0\"><svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\"><path d=\"M9 6l-6 6 6 6M15 6l6 6-6 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span></div>",
+      "css": ".ds-ba{position:relative;width:350px;aspect-ratio:350/266;border-radius:24px;overflow:hidden;background:#e6ecf5;--pos:50%}.ds-ba-after,.ds-ba-before{position:absolute;inset:0}.ds-ba-after{background:linear-gradient(135deg,#5e7db3,#3f5d91)}.ds-ba-before{background:linear-gradient(135deg,#c9b38f,#a8916c);clip-path:inset(0 calc(100% - var(--pos)) 0 0)}.ds-tag{position:absolute;top:12px;font:600 13px/1 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;letter-spacing:.03em;color:#fff;background:rgba(6,32,78,.72);padding:7px 10px;border-radius:6px}.ds-tag-l{left:12px}.ds-tag-r{right:12px}.ds-div{position:absolute;top:0;bottom:0;left:var(--pos);width:3px;margin-left:-1.5px;background:#e8b04a}.ds-knob{position:absolute;top:50%;left:var(--pos);width:48px;height:48px;margin:-24px 0 0 -24px;border-radius:50%;background:#e8b04a;color:#06204e;display:grid;place-items:center;box-shadow:0 6px 18px rgba(6,32,78,.3)}.ds-knob:focus-visible{outline:3px solid #1f5fbf;outline-offset:3px}"
+    },
+    {
+      "name": "Numbered Steps",
+      "kind": "custom",
+      "refersTo": "step-disc",
+      "description": "Brass number discs with Cal Sans step titles on the textured deep band.",
+      "html": "<ol class=\"ds-steps\"><li><div><b>Tell us about the job.</b><span>Use the form below, or call.</span></div></li><li><div><b>Get your free estimate.</b><span>We look at the job and give you a price.</span></div></li></ol>",
+      "css": ".ds-steps{list-style:none;margin:0;padding:32px 24px;display:grid;gap:24px;counter-reset:s;background-color:#06204e;background-image:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px);color:#c8d4e8;font:16px/1.7 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}.ds-steps li{display:grid;grid-template-columns:48px 1fr;gap:16px;align-items:start;counter-increment:s}.ds-steps li::before{content:counter(s);width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:#e8b04a;color:#06204e;font:400 20px/1 'Cal Sans','Avenir Next',system-ui,sans-serif}.ds-steps b{display:block;font:400 21px/1.2 'Cal Sans','Avenir Next',system-ui,sans-serif;color:#f4f7fb;margin-top:4px}.ds-steps span{display:block;margin-top:4px}"
+    },
+    {
+      "name": "Floating Text Circle",
+      "kind": "button",
+      "refersTo": "float-circle",
+      "description": "The one persistent action: a 60px brass circle that opens a pre-written text.",
+      "html": "<a class=\"ds-float\" href=\"#\" aria-label=\"Text for a free estimate\"><svg viewBox=\"0 0 24 24\" width=\"26\" height=\"26\"><path d=\"M4 5h16v11H9l-5 4z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a>",
+      "css": ".ds-float{width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:#e8b04a;color:#06204e;box-shadow:0 10px 28px rgba(6,24,56,.3);transition:transform .35s cubic-bezier(.2,.8,.2,1)}.ds-float:focus-visible{outline:3px solid #1f5fbf;outline-offset:3px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Harbour Logbook",
+    "overview": "The system is the logo's nautical navy laid out in calm horizontal bands: off-white paper, a pale blue-grey band, a mid navy band and a deep navy band carrying a faint diagonal line texture. Each band holds one idea, set in Cal Sans headings over a plain system body. One warm brass accent does all the pointing: it fills the primary button, the slider knob and divider, the step numbers and the floating text circle, and it never sits on a large surface. Real photography carries the craft (the hero is the client's own freshly painted blue wall under a navy wash, and the work band shows their before/afters); the chrome around it stays quiet.\n\nDensity is low and phone-first. Content stacks in a single 20px-gutter column with generous 64px band padding and only splits into two or three columns from 1024px. Forms are soft: rounded 24px cards, pill buttons, pill chips, 10px fields filled rather than outlined. Motion is short and purposeful: the hero headline's letters bounce in once, below-the-fold blocks rise 12px as they arrive, and the floating text circle slides up after the hero. All of it switches off under reduced motion.",
+    "keyCharacteristics": [
+      "Full-bleed colour bands alternating light (paper, light band) and dark (navy, deep navy); no borders between them.",
+      "One brass accent, used as a fill; brass as text only in its darkened ink form on light ground.",
+      "Cal Sans at weight 400 for every heading, label, button and row; system sans for running text.",
+      "Pills, circles and 24px cards; no sharp corners on interactive elements.",
+      "Flat surfaces; the only shadows sit under the two floating brass discs.",
+      "A distinct focus blue for keyboard and form-hover states, kept apart from the brass fill."
+    ],
+    "rules": [
+      {
+        "name": "The Brass Is a Fill Rule",
+        "body": "Brass appears as a fill on small elements (buttons, discs, the slider divider), never as a band or card background, and never as text on light ground; for text on light ground use Brass Ink.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Signals Rule",
+        "body": "Brass means \"act here\"; Focus Blue means \"you are here\". Keyboard focus and form hover use Focus Blue on light ground so a focused brass button stays readable.",
+        "section": "colors"
+      },
+      {
+        "name": "The Dark-Band Accent Rule",
+        "body": "A heading's last phrase may take the accent (\"What we *paint.*\", \"How it *works.*\") only on dark grounds: the hero, navy and deep navy bands. Headings on light bands stay all Logo Navy.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Weight Rule",
+        "body": "Cal Sans is set at 400 everywhere; emphasis comes from size and colour, not boldness. The only bold in the system is a 600 system-sans phrase inside the hero promise.",
+        "section": "typography"
+      },
+      {
+        "name": "The Phone-First Rule",
+        "body": "Design every band as a single column first; add columns only at 760px and 1024px.",
+        "section": "layout"
+      },
+      {
+        "name": "The Only Floaters Cast Shadows Rule",
+        "body": "A shadow means the element floats over other content. Cards, buttons, chips and bands stay flat.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Visible At Rest Rule",
+        "body": "Content is visible without JavaScript and under reduced motion; motion only ever adds an entrance, never gates content.",
+        "section": "components"
+      }
+    ],
+    "dos": [
+      "Do fill actions with Harbour Brass and set Logo Navy text on it.",
+      "Do use Brass Ink, not brass, whenever the accent is text or a line icon on paper or the light band.",
+      "Do alternate light and dark bands, and keep the diagonal line texture to deep navy bands.",
+      "Do keep tap targets at least 44px (buttons 56px, chips 48px, rows 76px).",
+      "Do gate hover styles behind a real pointer (hover: hover) so taps don't leave them stuck.",
+      "Do switch focus outlines to brass on navy, hero and footer grounds."
+    ],
+    "donts": [
+      "Don't use brass as a band, card or large background.",
+      "Don't use Focus Blue as a decorative colour; it is reserved for focus and form hover.",
+      "Don't add shadows to cards, buttons or bands; only floating discs cast them.",
+      "Don't set Cal Sans bold or add a second display face.",
+      "Don't add a sticky bottom bar; the floating circle is the one persistent action.",
+      "Don't animate content that is visible on first load, beyond the hero letter bounce-in."
+    ]
+  }
+}
