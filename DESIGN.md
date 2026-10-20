@@ -204,7 +204,7 @@ A cool navy-and-paper palette with a single warm brass accent.
 ### Hierarchy
 - **Display** (400, clamp 42 to 80px, 1.02): the hero H1 only, in white, max 11ch on phone and 14ch on desktop.
 - **Headline** (400, clamp 30 to 48px, 1.08): section H2s, balanced wrapping.
-- **Title** (400, clamp 20 to 28px, 1.15): service rows and trust claims; the Facebook banner and step titles sit at its low end (19 to 22px). The close band's phone number is the one oversize exception (clamp 30 to 52px).
+- **Title** (400, clamp 20 to 28px, 1.15): service rows and trust claims; the Facebook banner and step titles sit at its low end (19 to 22px banner, 21px steps). The close band's phone number is the one oversize exception (clamp 30 to 52px).
 - **Title small** (400, 18px, 1.2): buttons, field labels and legends, the header phone (17px, 20px on desktop).
 - **Lede** (system, clamp 17 to 19px): section introductions, max 40ch, in Soft Slate (Soft Mist on navy). The hero promise is the same role at 17 to 20px, line height 1.5, max 32ch.
 - **Body** (system, 16px, 1.7): running text and field input text (16px keeps iOS from zooming).
@@ -255,7 +255,7 @@ Confident, round, thumb-sized.
 
 ### Cards / Containers
 - **Form card:** White Card on Paper, 24px corners, padding 20 to 32px, 20px gap between fields, max 600px.
-- **Link banner:** Logo Navy block, 20px corners, min 80px tall, Cal Sans text with a brass icon left and an arrow disc right.
+- **Link banner:** Logo Navy block, 24px card corners, min 80px tall, Cal Sans text with a brass icon left and an arrow disc right.
 - **Shadow strategy:** none (see Elevation & Depth).
 
 ### Inputs / Fields
