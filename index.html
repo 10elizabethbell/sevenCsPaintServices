@@ -96,7 +96,7 @@ section{padding:64px 0}
 /* ---------- Hero: their own blue wall under the logo's navy ---------- */
 .hero{padding:0;position:relative;background:var(--deep);color:var(--on-dark);overflow:hidden;isolation:isolate}
 .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%;z-index:-2;transform:scale(1.04)}
-.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(6,32,78,.86) 0%,rgba(6,32,78,.78) 55%,rgba(6,32,78,.9) 100%)}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(6,32,78,.82) 0%,rgba(6,32,78,.7) 55%,rgba(6,32,78,.88) 100%)}
 .hero-copy{display:grid;gap:20px;justify-items:start;padding-top:56px;padding-bottom:68px}
 .hero h1{color:#fff;font-size:clamp(42px,12vw,80px);line-height:1.02;max-width:11ch}
 /* H1 bounce-in (after lpmr.co.uk): each letter slides in from 50px right with a slight overshoot, 20ms apart */
@@ -135,7 +135,7 @@ section{padding:64px 0}
 .ba .knob:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:50%}
 .tag{position:absolute;top:12px;font:600 13px/1 var(--text);letter-spacing:.03em;color:#fff;background:rgba(6,32,78,.72);padding:7px 10px;border-radius:6px;pointer-events:none}
 .tag.l{left:12px}.tag.r{right:12px}
-.hint{margin-top:10px;font-size:15px;color:var(--soft)}
+.hint{margin-top:10px;font-size:14px;color:var(--soft)}
 .pair{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .pair figure{margin:0;position:relative;aspect-ratio:356/266;border-radius:18px;overflow:hidden;background:var(--field)}
 .pair img{width:100%;height:100%;object-fit:cover}
@@ -158,7 +158,7 @@ section{padding:64px 0}
 .ask .wrap{display:grid;gap:28px}
 form{background:var(--card);border-radius:var(--r-card);padding:clamp(20px,5vw,32px);display:grid;gap:20px;max-width:600px}
 .field{display:grid;gap:8px;min-width:0}
-.field label,.field legend{font:400 17px/1.2 var(--display);color:var(--ink);padding:0}
+.field label,.field legend{font:400 18px/1.2 var(--display);color:var(--ink);padding:0}
 .field small{font:400 14px/1 var(--text);color:var(--soft);margin-left:4px}
 fieldset{border:0;margin:0;padding:0;min-width:0}
 fieldset legend{margin-bottom:8px}
@@ -171,12 +171,12 @@ input[type=text]:focus,textarea:focus{outline:none;border-color:var(--focus)}
 .chips label{display:inline-flex;align-items:center;min-height:48px;padding:0 18px;border-radius:var(--pill);background:var(--field);border:2px solid transparent;font:16px/1 var(--text);color:var(--ink);cursor:pointer;margin:0;transition:border-color .15s,background-color .15s,color .15s}
 .chips input:focus-visible+label{outline:3px solid var(--focus);outline-offset:2px}
 .chips input:checked+label{background:var(--ink);color:#fff}
-.err{display:none;font-size:15px;color:var(--error)}
+.err{display:none;font-size:14px;color:var(--error)}
 .field.bad .err{display:block}
 .field.bad input[type=text],.field.bad textarea,.field.bad input[type=text]:focus,.field.bad textarea:focus{border-color:var(--error)}
 form .btn-primary{width:100%}
 form .btn-primary:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
-.after{font-size:15px;color:var(--soft)}
+.after{font-size:14px;color:var(--soft)}
 .sent{color:var(--ink);font-weight:600}
 .sent a{white-space:nowrap;display:inline-block;padding:11px 0;margin:-11px 0}
 @media (max-width:380px){.chips label{padding:0 14px}}
