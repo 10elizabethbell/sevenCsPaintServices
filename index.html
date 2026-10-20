@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Seven C's Paint Services LLC · Painters in Toms River, NJ</title>
+<meta name="description" content="Small family owned and operated painting company out of Toms River, NJ. Interior and exterior. Our lead painter brings 29 years of experience to every job. Free estimates: 732-305-5003.">
+<meta name="theme-color" content="#f4f6fb">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Seven C's Paint Services LLC · Toms River homes, painted right">
+<meta property="og:description" content="Family owned painters out of Toms River, NJ. Interior and exterior. Free estimates: 732-305-5003.">
+<meta property="og:url" content="https://10elizabethbell.github.io/sevenCsPaintServices/">
+<meta property="og:image" content="https://10elizabethbell.github.io/sevenCsPaintServices/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap">
+<style>
+/* ---------- Tokens ---------- */
+:root{
+  /* off-white paper, the logo's navy, one warm brass accent */
+  --paper:#f4f6fb;       /* page ground */
+  --light:#e9eef6;       /* the light band (work) */
+  --card:#ffffff;
+  --field:#e6ecf5;       /* inputs and chips on the white form card */
+  --ink:#06204e;         /* headings, text on brass; the logo's navy */
+  --body:#25334d;        /* running text on light */
+  --soft:#4b5872;        /* secondary text on light */
+  --navy:#183a72;        /* hero overlay, services, close */
+  --deep:#06204e;        /* how it works, footer (line texture) */
+  --on-dark:#f4f7fb;
+  --on-dark-soft:#c8d4e8;
+  --brass:#e8b04a;       /* fills only; text on it is --ink */
+  --brass-2:#f0c26a;
+  --brass-ink:#7d5612;   /* brass as text on light (6:1) */
+  --line:rgba(6,32,78,.12);
+  --focus:#1f5fbf;       /* form hover/focus outline, distinct from the brass fill */
+  --error:#b3261e;
+  --texture:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px);
+  --display:"Cal Sans","Avenir Next","Segoe UI",system-ui,sans-serif;
+  --text:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+  --r-card:24px;--r-field:10px;--pill:999px;
+  --gutter:20px;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;background:var(--paper)}
+body{margin:0;font:16px/1.7 var(--text);color:var(--body);background:var(--paper)}
+::selection{background:var(--brass);color:var(--ink)}
+img,svg{display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:6px}
+.on-navy :focus-visible,.on-deep :focus-visible,.hero :focus-visible,footer :focus-visible{outline-color:var(--brass)}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 var(--gutter)}
+h1,h2,h3{margin:0;font-family:var(--display);font-weight:400;line-height:1.08;letter-spacing:-.005em;color:var(--ink);text-wrap:balance}
+h2{font-size:clamp(30px,7.6vw,48px)}
+p{margin:0}
+
+/* ---------- Bands ---------- */
+section{padding:64px 0}
+.on-paper{background:var(--paper)}
+.on-light{background:var(--light)}
+.on-navy{background:var(--navy);color:var(--on-dark-soft)}
+.on-deep{background-color:var(--deep);background-image:var(--texture);color:var(--on-dark-soft)}
+.on-navy h2,.on-deep h2,.on-navy h3,.on-deep h3{color:var(--on-dark)}
+.accent{color:var(--brass-ink)}
+.on-navy .accent,.on-deep .accent,.hero .accent{color:var(--brass)}
+.head{display:grid;gap:16px;justify-items:start;max-width:640px}
+.lede{font-size:clamp(17px,4.6vw,19px);color:var(--soft);max-width:40ch}
+.on-navy .lede,.on-deep .lede{color:var(--on-dark-soft)}
+
+/* Eyebrow: a few key headings only. A label, not a button. */
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font:500 14px/1 var(--text);letter-spacing:.02em;color:var(--ink);background:rgba(6,32,78,.06);padding:9px 14px;border-radius:var(--pill)}
+.eyebrow::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--brass)}
+.hero .eyebrow,.on-navy .eyebrow,.on-deep .eyebrow{color:var(--on-dark);background:rgba(255,255,255,.12)}
+
+/* ---------- Buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:var(--pill);font:400 18px/1 var(--display);text-decoration:none;cursor:pointer;border:2px solid transparent;transition:background-color .2s,color .2s,border-color .2s,transform .12s}
+.btn:active{transform:scale(.98)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-primary{background:var(--brass);color:var(--ink);border-color:var(--brass)}
+.btn-ghost{background:transparent;color:var(--on-dark);border-color:rgba(244,247,251,.7)}
+
+/* ---------- Header ---------- */
+.top{background:var(--paper);color:var(--ink);position:relative;z-index:2}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:76px;padding-top:max(8px,env(safe-area-inset-top));padding-bottom:8px}
+.brand{display:block;text-decoration:none}
+.brand img{height:62px;width:auto}
+.tel{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 2px;font:400 17px/1 var(--display);text-decoration:none;white-space:nowrap}
+.tel svg{width:18px;height:18px;flex:none;color:var(--brass-ink)}
+
+/* ---------- Hero: their own blue wall under the logo's navy ---------- */
+.hero{padding:0;position:relative;background:var(--deep);color:var(--on-dark);overflow:hidden;isolation:isolate}
+.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%;z-index:-2;transform:scale(1.04)}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(6,32,78,.86) 0%,rgba(6,32,78,.78) 55%,rgba(6,32,78,.9) 100%)}
+.hero-copy{display:grid;gap:20px;justify-items:start;padding-top:56px;padding-bottom:68px}
+.hero h1{color:#fff;font-size:clamp(42px,12vw,80px);line-height:1.02;max-width:11ch}
+/* H1 bounce-in (after lpmr.co.uk): each letter slides in from 50px right with a slight overshoot, 20ms apart */
+.hero h1 .w{display:inline-block;white-space:nowrap}
+.hero h1 .c{display:inline-block;opacity:0;transform:translateX(50px);animation:letter-in 1s cubic-bezier(.34,1.56,.64,1) forwards;animation-delay:calc(var(--i) * 20ms)}
+@keyframes letter-in{to{opacity:1;transform:none}}
+.promise{font-size:clamp(17px,4.7vw,20px);line-height:1.5;color:var(--on-dark);max-width:32ch}
+.promise b{color:#fff;font-weight:600}
+.actions{display:grid;gap:12px;width:100%;margin-top:4px}
+
+/* ---------- Trust ---------- */
+.claims{list-style:none;margin:28px 0 0;padding:0;display:grid}
+.claims li{display:flex;align-items:center;gap:16px;padding:16px 0;font:400 clamp(20px,5.4vw,24px)/1.15 var(--display);color:var(--ink)}
+.claims li+li{border-top:1px solid var(--line)}
+.claims svg{width:40px;height:40px;flex:none;color:var(--brass-ink)}
+
+/* ---------- Services: each row is the link; only its arrow changes ---------- */
+.rows{list-style:none;margin:32px 0 0;padding:0;display:grid}
+.rows li{border-top:1px solid rgba(255,255,255,.14)}
+.rows li:last-child{border-bottom:1px solid rgba(255,255,255,.14)}
+.row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:76px;padding:12px 0;text-decoration:none;color:var(--on-dark);font:400 clamp(22px,6vw,28px)/1.15 var(--display)}
+.row:hover,.row:focus-visible{outline:none;background:none;box-shadow:none}
+.arrow{width:44px;height:44px;flex:none;border-radius:50%;display:grid;place-items:center;background:rgba(6,32,78,.07);color:var(--ink);transition:background-color .2s,color .2s}
+.arrow svg{width:18px;height:18px}
+.row .arrow{background:rgba(255,255,255,.1);color:var(--on-dark)}
+.row:focus-visible .arrow{background:var(--brass);color:var(--ink);outline:3px solid var(--brass);outline-offset:3px}
+
+/* ---------- Work: before/after ---------- */
+.work-grid{display:grid;gap:16px;margin-top:32px}
+.ba{position:relative;aspect-ratio:350/266;border-radius:var(--r-card);overflow:hidden;background:var(--field);touch-action:pan-y;user-select:none;-webkit-user-select:none;cursor:ew-resize;--pos:50%}
+.ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none;-webkit-user-drag:none}
+.ba .before{clip-path:inset(0 calc(100% - var(--pos)) 0 0)}
+.ba .divider{position:absolute;top:0;bottom:0;left:var(--pos);width:3px;margin-left:-1.5px;background:var(--brass);pointer-events:none}
+.ba .knob{position:absolute;top:50%;left:var(--pos);width:48px;height:48px;margin:-24px 0 0 -24px;border-radius:50%;background:var(--brass);color:var(--ink);display:grid;place-items:center;box-shadow:0 6px 18px rgba(6,32,78,.3)}
+.ba .knob svg{width:24px;height:24px}
+.ba .knob:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:50%}
+.tag{position:absolute;top:12px;font:600 13px/1 var(--text);letter-spacing:.03em;color:#fff;background:rgba(6,32,78,.72);padding:7px 10px;border-radius:6px;pointer-events:none}
+.tag.l{left:12px}.tag.r{right:12px}
+.hint{margin-top:10px;font-size:15px;color:var(--soft)}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.pair figure{margin:0;position:relative;aspect-ratio:356/266;border-radius:18px;overflow:hidden;background:var(--field)}
+.pair img{width:100%;height:100%;object-fit:cover}
+.pair .tag{left:10px;top:10px}
+.fb{margin-top:12px;display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:80px;padding:16px 16px 16px 22px;border-radius:20px;background:var(--ink);color:var(--on-dark);text-decoration:none;font:400 clamp(19px,5.2vw,22px)/1.2 var(--display)}
+.fb:hover,.fb:focus-visible{outline:none;box-shadow:none}
+.fb .lbl{display:flex;align-items:center;gap:14px}
+.fb .lbl svg{width:30px;height:30px;flex:none;color:var(--brass)}
+.fb .arrow{background:rgba(255,255,255,.12);color:var(--on-dark)}
+.fb:focus-visible .arrow{background:var(--brass);color:var(--ink);outline:3px solid var(--focus);outline-offset:3px}
+
+/* ---------- How it works ---------- */
+.steps{list-style:none;margin:36px 0 0;padding:0;display:grid;gap:24px;counter-reset:s}
+.steps li{display:grid;grid-template-columns:48px 1fr;gap:16px;align-items:start;counter-increment:s}
+.steps li::before{content:counter(s);width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--brass);color:var(--ink);font:400 20px/1 var(--display)}
+.steps b{display:block;font:400 21px/1.2 var(--display);color:var(--on-dark);margin-top:4px}
+.steps span{display:block;margin-top:4px}
+
+/* ---------- Form ---------- */
+.ask .wrap{display:grid;gap:28px}
+form{background:var(--card);border-radius:var(--r-card);padding:clamp(20px,5vw,32px);display:grid;gap:20px;max-width:600px}
+.field{display:grid;gap:8px;min-width:0}
+.field label,.field legend{font:400 17px/1.2 var(--display);color:var(--ink);padding:0}
+.field small{font:400 14px/1 var(--text);color:var(--soft);margin-left:4px}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+fieldset legend{margin-bottom:8px}
+input[type=text],textarea{width:100%;font:16px/1.4 var(--text);color:var(--ink);background:var(--field);border:2px solid transparent;border-radius:var(--r-field);padding:13px 14px;min-height:52px;caret-color:var(--navy);transition:border-color .15s}
+textarea{min-height:120px;resize:vertical}
+input::placeholder,textarea::placeholder{color:var(--soft)}
+input[type=text]:focus,textarea:focus{outline:none;border-color:var(--focus)}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chips input{position:absolute;width:1px;height:1px;opacity:0;margin:0}
+.chips label{display:inline-flex;align-items:center;min-height:48px;padding:0 18px;border-radius:var(--pill);background:var(--field);border:2px solid transparent;font:16px/1 var(--text);color:var(--ink);cursor:pointer;margin:0;transition:border-color .15s,background-color .15s,color .15s}
+.chips input:focus-visible+label{outline:3px solid var(--focus);outline-offset:2px}
+.chips input:checked+label{background:var(--ink);color:#fff}
+.err{display:none;font-size:15px;color:var(--error)}
+.field.bad .err{display:block}
+.field.bad input[type=text],.field.bad textarea,.field.bad input[type=text]:focus,.field.bad textarea:focus{border-color:var(--error)}
+form .btn-primary{width:100%}
+form .btn-primary:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+.after{font-size:15px;color:var(--soft)}
+.sent{color:var(--ink);font-weight:600}
+.sent a{white-space:nowrap;display:inline-block;padding:11px 0;margin:-11px 0}
+@media (max-width:380px){.chips label{padding:0 14px}}
+
+/* ---------- Close ---------- */
+.close .mark{width:200px;height:auto;aspect-ratio:480/296;background:var(--on-dark);-webkit-mask:url(img/logo.webp) center/contain no-repeat;mask:url(img/logo.webp) center/contain no-repeat;margin-bottom:24px}
+.close .who{margin-top:14px;font-size:clamp(18px,5vw,20px);color:var(--on-dark-soft)}
+.bigtel{display:inline-flex;align-items:center;gap:12px;margin-top:28px;font:400 clamp(30px,9vw,52px)/1 var(--display);text-decoration:none;color:var(--on-dark);min-height:56px;white-space:nowrap}
+.bigtel svg{width:.8em;height:.8em;flex:none;color:var(--brass)}
+.area{margin-top:22px;max-width:40ch}
+
+/* ---------- Footer ---------- */
+footer{background-color:var(--deep);background-image:var(--texture);color:var(--on-dark-soft);padding:48px 0 calc(96px + env(safe-area-inset-bottom));font-size:16px}
+footer .wrap{display:grid;gap:14px}
+.nw{white-space:nowrap}
+footer nav{display:flex;flex-wrap:wrap;gap:6px 22px}
+footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--on-dark);text-decoration:none}
+
+/* ---------- Floating text circle (one circle, never a bottom bar) ---------- */
+.float{position:fixed;z-index:15;right:calc(16px + env(safe-area-inset-right));bottom:calc(16px + env(safe-area-inset-bottom));width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:var(--brass);color:var(--ink);box-shadow:0 10px 28px rgba(6,24,56,.3);transform:translateY(120px);visibility:hidden;transition:transform .35s cubic-bezier(.2,.8,.2,1),visibility 0s .35s}
+.float.on{transform:none;visibility:visible;transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+.float svg{width:26px;height:26px}
+.float:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:50%}
+
+/* ---------- Motion: one fade-up, only for things below the first screen ---------- */
+.js .rise{transition:opacity .4s ease-out,transform .4s ease-out}
+.js .rise.below{opacity:0;transform:translateY(12px)}
+
+/* ---------- Desktop ---------- */
+@media (min-width:760px){
+  :root{--gutter:40px}
+  .top .wrap{min-height:88px}
+  .brand img{height:68px}
+  .tel{font-size:20px}
+  section{padding:96px 0}
+  .hero-copy{padding-top:104px;padding-bottom:120px}
+  .promise{max-width:40ch}
+  .actions{grid-auto-flow:column;justify-content:start;width:auto}
+  .actions .btn{min-width:240px}
+  .rows{grid-template-columns:1fr 1fr;column-gap:48px}
+  .rows li:nth-last-child(2){border-bottom:1px solid rgba(255,255,255,.14)}
+  .fb{max-width:520px}
+}
+@media (min-width:1024px){
+  .split{display:grid;grid-template-columns:1fr 1fr;column-gap:64px;align-items:start}
+  .split .claims{margin-top:0}
+  .work-grid{grid-template-columns:1.35fr 1fr;grid-template-areas:"ba pair" "fb pair";gap:24px;align-items:start}
+  .work-grid>.rise:first-child{grid-area:ba}.work-grid .pair{grid-area:pair}.work-grid .fb{grid-area:fb;margin-top:0}
+  .pair{grid-template-columns:1fr;gap:16px}
+  .ask .wrap{grid-template-columns:1fr 1.2fr;gap:64px;align-items:start}
+  .ask .head{position:sticky;top:40px}
+  .close .wrap{display:grid;grid-template-columns:1fr auto;gap:48px;align-items:end}
+  .bigtel{margin-top:0}
+  .how .steps{grid-template-columns:repeat(3,1fr);gap:40px}
+  .steps b{font-size:22px}
+}
+/* hover styles only where there is a real pointer, so taps don't leave them stuck on */
+@media (hover:hover){
+.tel:hover{color:var(--brass-ink)}
+.btn-primary:hover{background:var(--brass-2);border-color:var(--brass-2)}
+.btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.1)}
+.row:hover .arrow,.fb:hover .arrow{background:var(--brass);color:var(--ink)}
+input[type=text]:hover,textarea:hover{border-color:var(--focus)}
+.chips label:hover{border-color:var(--focus)}
+form .btn-primary:hover{outline:3px solid var(--focus);outline-offset:3px}
+.sent a:hover{color:var(--navy)}
+.bigtel:hover{color:var(--brass)}
+footer a:hover{color:var(--brass)}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .rise,.float,.btn{transition:none}
+  .js .rise.below{opacity:1;transform:none}
+  .hero h1 .c{animation:none;opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<!--
+THESIS: A small family painting company out of Toms River earns the estimate through its own work and its lead painter's 29 years: one claim (Toms River homes, painted right), real before/afters, and an easy way to ask for the free estimate.
+OWN-WORLD: The logo's nautical navy (#06204e, "Seven C's" = the seven seas, gulls and waves) on off-white paper, a mid navy (#183a72) band, and one warm brass accent (fills only; #7d5612 as text on light). The hero is their own freshly painted blue panelled wall under the navy. Cal Sans display, system body at 16/1.7.
+STORY: The visitor sees who paints in Toms River, sees the hallway and den they transformed, believes a 29-year painter will treat the house with care, and sends a request for the free estimate.
+FIRST VIEWPORT: Paper header with the navy script logo left and the tap-to-call number top right. Hero over the blue wall photo: eyebrow "Free estimates", "Toms River homes, painted right.", the family/29-years promise, two pill buttons (Schedule your free estimate, See our work).
+FORM: calm-photo band system (calm-photo-style.md) with a photo hero; no concept roll. Runner-up worlds are in HANDOFF.md.
+-->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3h3.5l1.8 4.6-2.3 1.5a11 11 0 0 0 6 6l1.5-2.3L20 14.5V18a2 2 0 0 1-2.2 2A16 16 0 0 1 3 5.2 2 2 0 0 1 5 3z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#" aria-label="Seven C's Paint Services, back to top"><img src="img/logo.webp" width="480" height="296" alt="Seven C's Paint Services"></a>
+    <a class="tel" href="tel:+17323055003"><svg aria-hidden="true"><use href="#i-phone"/></svg>732-305-5003</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" id="hero" aria-labelledby="h1">
+  <img class="hero-bg" src="img/hero.webp" width="1068" height="786" alt="" fetchpriority="high">
+  <div class="wrap hero-copy">
+    <p class="eyebrow">Free estimates</p>
+    <h1 id="h1">Toms River homes, <span class="accent">painted right.</span></h1>
+    <p class="promise">A small family painting company. Our lead painter brings <b>29 years of experience</b> to every job.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#ask">Schedule your free estimate</a>
+      <a class="btn btn-ghost" href="#work">See our work</a>
+    </div>
+  </div>
+</section>
+
+<section class="on-paper" aria-labelledby="h-trust">
+  <div class="wrap split">
+    <div class="rise">
+      <h2 id="h-trust">We paint your home like it's our own.</h2>
+      <p class="lede" style="margin-top:16px">We're a small family business, so the people who come out for your estimate are the people who paint. We cover your floors, patch the dings first, and leave every line clean.</p>
+    </div>
+    <ul class="claims">
+      <li class="rise"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="5" width="22" height="11" rx="3"/><path d="M28 10h4v8H18v5"/><rect x="15" y="23" width="6" height="13" rx="2"/></svg>29 years of experience</li>
+      <li class="rise"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19L20 6l15 13"/><path d="M9 16v18h22V16"/><path d="M17 34v-9h6v9"/></svg>Family owned and operated</li>
+      <li class="rise"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 8h26v18H18l-7 6v-6H7z"/><path d="M14 15h12M14 20h8"/></svg>Local referrals on request</li>
+      <li class="rise"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="5" width="24" height="30" rx="4"/><path d="M14 13h12M14 19h12M14 25h7"/></svg>Free estimates</li>
+    </ul>
+  </div>
+</section>
+
+<section class="on-navy" id="services" aria-labelledby="h-services">
+  <div class="wrap">
+    <div class="head rise">
+      <h2 id="h-services">What we <span class="accent">paint.</span></h2>
+      <p class="lede">Booking interior jobs through the winter and exterior jobs for spring.</p>
+    </div>
+    <ul class="rows">
+      <li class="rise"><a class="row" href="#ask" data-pick="Interior">Interior painting<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+      <li class="rise"><a class="row" href="#ask" data-pick="Exterior">Exterior painting<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+      <li class="rise"><a class="row" href="#ask" data-pick="Trim">Trim and wainscoting<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+      <li class="rise"><a class="row" href="#ask" data-pick="Wall repair">Wall patching<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="on-light" id="work" aria-labelledby="h-work">
+  <div class="wrap">
+    <div class="head rise">
+      <p class="eyebrow">Before and after</p>
+      <h2 id="h-work">Recent work</h2>
+    </div>
+    <div class="work-grid">
+      <div class="rise">
+        <div class="ba" id="ba">
+          <img src="img/hall-after.webp" width="700" height="532" alt="Hallway after: slate blue walls above bright white wainscoting" loading="lazy" draggable="false">
+          <img class="before" src="img/hall-before.webp" width="700" height="532" alt="The same hallway before: tan walls with patched holes" loading="lazy" draggable="false">
+          <span class="tag l" aria-hidden="true">Before</span><span class="tag r" aria-hidden="true">After</span>
+          <span class="divider" aria-hidden="true"></span>
+          <span class="knob" role="slider" tabindex="0" aria-label="Compare before and after" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-valuetext="50% before"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </div>
+        <p class="hint">Drag to compare.</p>
+      </div>
+      <div class="pair rise">
+        <figure><img src="img/den-before.webp" width="712" height="532" alt="Den before: tan panelled wall with drop cloths on the floor" loading="lazy"><span class="tag">Before</span></figure>
+        <figure><img src="img/den-after.webp" width="712" height="532" alt="Den after: the panelled wall painted slate blue" loading="lazy"><span class="tag">After</span></figure>
+      </div>
+      <a class="fb rise" href="https://facebook.com/profile.php?id=61594515396428" rel="noopener">
+        <span class="lbl"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12a12 12 0 1 0-13.9 11.9v-8.4h-3V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v2.9h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12z"/></svg>Click to see more of our work.</span>
+        <span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="on-deep how" aria-labelledby="h-how">
+  <div class="wrap">
+    <h2 id="h-how" class="rise">How it <span class="accent">works.</span></h2>
+    <ol class="steps">
+      <li class="rise"><div><b>Tell us about the job.</b><span>Use the form below, or call.</span></div></li>
+      <li class="rise"><div><b>Get your free estimate.</b><span>It costs you nothing.</span></div></li>
+      <li class="rise"><div><b>We paint.</b><span>With our lead painter on the job.</span></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="on-paper ask" id="ask" aria-labelledby="h-ask">
+  <div class="wrap">
+    <div class="head rise">
+      <p class="eyebrow">Free estimate</p>
+      <h2 id="h-ask">Schedule your free estimate</h2>
+      <p class="lede">Recent local referrals are available on request.</p>
+    </div>
+    <form id="quoteForm" class="rise" novalidate>
+      <fieldset class="field">
+        <legend>What needs painting? <small>(pick any)</small></legend>
+        <div class="chips">
+          <input type="checkbox" name="job" id="j1" value="Interior"><label for="j1">Interior</label>
+          <input type="checkbox" name="job" id="j2" value="Exterior"><label for="j2">Exterior</label>
+          <input type="checkbox" name="job" id="j3" value="Trim"><label for="j3">Trim</label>
+          <input type="checkbox" name="job" id="j4" value="Wall repair"><label for="j4">Wall patching</label>
+        </div>
+      </fieldset>
+      <div class="field" id="f-name">
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name" autocomplete="name" maxlength="60" placeholder="First name is fine" aria-describedby="e-name">
+        <p class="err" id="e-name">Add your name so we know who's texting.</p>
+      </div>
+      <div class="field">
+        <label for="where">Your town <small>(optional)</small></label>
+        <input type="text" id="where" name="where" autocomplete="address-level2" maxlength="60" placeholder="e.g. Toms River">
+      </div>
+      <div class="field">
+        <label for="what">About the job <small>(optional)</small></label>
+        <textarea id="what" name="what" maxlength="600" placeholder="Which rooms, the outside, colors you have in mind…"></textarea>
+      </div>
+      <button class="btn btn-primary" type="submit"><svg aria-hidden="true"><use href="#i-chat"/></svg>Text this to Seven C's</button>
+      <p class="sent" id="sent" role="status" hidden>Didn't open your messages? Call us at <a href="tel:+17323055003">732-305-5003</a>.</p>
+      <p class="after">Opens your messages with this written out.</p>
+    </form>
+  </div>
+</section>
+
+<section class="on-navy close" id="close" aria-labelledby="h-close">
+  <div class="wrap">
+    <div class="rise">
+      <div class="mark" role="img" aria-label="Seven C's Paint Services logo"></div>
+      <h2 id="h-close">Seven C's Paint Services LLC</h2>
+      <p class="who">Small, family owned and operated.</p>
+      <p class="area">Based in Toms River, NJ. Not sure we cover your town? Call and ask.</p>
+    </div>
+    <a class="bigtel rise" href="tel:+17323055003"><svg aria-hidden="true"><use href="#i-phone"/></svg>732-305-5003</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Seven C's Paint Services LLC · Toms River, NJ · <span class="nw">732-305-5003</span></span>
+    <nav aria-label="Contact">
+      <a href="mailto:sevencspaint@gmail.com">sevencspaint@gmail.com</a>
+      <a href="https://facebook.com/profile.php?id=61594515396428" rel="noopener">Facebook</a>
+    </nav>
+  </div>
+</footer>
+
+<a class="float" id="float" href="sms:+17323055003?&amp;body=Hi%20Seven%20C's%2C%20I%20found%20your%20website.%20I'd%20like%20a%20free%20estimate%20for%3A%20" aria-label="Text Seven C's for a free estimate" tabindex="-1" aria-hidden="true"><svg aria-hidden="true"><use href="#i-chat"/></svg></a>
+
+<script>
+/* ===== Config ===== */
+var CONFIG = {
+  FLOAT: true,           // the floating text circle; false removes it
+  PHONE: '+17323055003', // texts and calls go here
+  NAME: "Seven C's"
+};
+document.documentElement.classList.add('js');
+
+/* ===== Hero H1 bounce-in: split into letters (JS only, so no-JS and reduced motion keep the plain heading) ===== */
+(function(){
+  var h=document.getElementById('h1');
+  if(!h||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  var plain=h.innerHTML,i=0,last=null;
+  h.setAttribute('aria-label',h.textContent.replace(/\s+/g,' ').trim());
+  function split(node,into){
+    [].slice.call(node.childNodes).forEach(function(n){
+      if(n.nodeType===3){
+        n.textContent.split(/(\s+)/).forEach(function(part){
+          if(!part)return;
+          if(/^\s+$/.test(part)){into.appendChild(document.createTextNode(' '));return}
+          var w=document.createElement('span');w.className='w';w.setAttribute('aria-hidden','true');
+          for(var k=0;k<part.length;k++){var c=document.createElement('span');c.className='c';c.style.setProperty('--i',i++);c.textContent=part[k];w.appendChild(c);last=c}
+          into.appendChild(w);
+        });
+      }else if(n.nodeType===1){var copy=n.cloneNode(false);split(n,copy);into.appendChild(copy)}
+    });
+  }
+  var frag=document.createDocumentFragment();split(h,frag);h.textContent='';h.appendChild(frag);
+  // once the last letter lands, put the plain heading back so kerning and text selection return
+  if(last)last.addEventListener('animationend',function(){h.innerHTML=plain;h.removeAttribute('aria-label')});
+})();
+
+/* ===== Before/after slider: drag sideways (vertical scroll still works), or arrow keys on the knob ===== */
+(function(){
+  var ba=document.getElementById('ba');if(!ba)return;
+  var knob=ba.querySelector('.knob'),pos=50,start=null,dragging=false;
+  function set(p){pos=Math.max(0,Math.min(100,p));ba.style.setProperty('--pos',pos+'%');knob.setAttribute('aria-valuenow',Math.round(pos));knob.setAttribute('aria-valuetext',Math.round(pos)+'% before')}
+  function at(x){var r=ba.getBoundingClientRect();set((x-r.left)/r.width*100)}
+  ba.addEventListener('pointerdown',function(e){
+    if(e.pointerType==='mouse'){dragging=true;e.preventDefault();ba.setPointerCapture(e.pointerId);at(e.clientX)}
+    else start={x:e.clientX,y:e.clientY,id:e.pointerId};
+  });
+  ba.addEventListener('pointermove',function(e){
+    if(dragging){at(e.clientX);return}
+    if(!start)return;
+    var dx=Math.abs(e.clientX-start.x),dy=Math.abs(e.clientY-start.y);
+    if(dx>8&&dx>dy){dragging=true;try{ba.setPointerCapture(start.id)}catch(_){}at(e.clientX)}
+    else if(dy>8)start=null;
+  });
+  function end(){dragging=false;start=null}
+  ba.addEventListener('pointerup',end);ba.addEventListener('pointercancel',end);
+  // a plain tap moves the divider there
+  ba.addEventListener('click',function(e){if(e.target!==knob)at(e.clientX)});
+  knob.addEventListener('keydown',function(e){
+    var k=e.key,step=e.shiftKey?20:5;
+    if(k==='ArrowLeft'||k==='ArrowDown')set(pos-step);else if(k==='ArrowRight'||k==='ArrowUp')set(pos+step);
+    else if(k==='Home')set(0);else if(k==='End')set(100);else return;
+    e.preventDefault();
+  });
+})();
+
+/* ===== Quote form: composes a text to Seven C's ===== */
+(function(){
+  var form=document.getElementById('quoteForm');if(!form)return;
+  function val(id){return document.getElementById(id).value.trim()}
+  // tapping a service row ticks its chip
+  [].forEach.call(document.querySelectorAll('[data-pick]'),function(a){
+    a.addEventListener('click',function(){var c=form.querySelector('input[name=job][value="'+a.getAttribute('data-pick')+'"]');if(c)c.checked=true});
+  });
+  form.addEventListener('input',function(e){var f=e.target.closest('.field');if(f&&f.classList.contains('bad')&&e.target.value.trim()){f.classList.remove('bad');e.target.setAttribute('aria-invalid','false')}});
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var name=val('name'),what=val('what'),where=val('where');
+    var says={'Interior':'interior painting','Exterior':'exterior painting','Trim':'trim','Wall repair':'wall patching'};
+    var jobs=[].map.call(form.querySelectorAll('input[name=job]:checked'),function(c){return says[c.value]});
+    var f=document.getElementById('f-name'),n=document.getElementById('name');
+    f.classList.toggle('bad',!name);n.setAttribute('aria-invalid',name?'false':'true');
+    if(!name){n.focus();return}
+    var msg='Hi '+CONFIG.NAME+', this is '+name+'. I\'d like a free estimate';
+    if(jobs.length)msg+=' for '+(jobs.length>1?jobs.slice(0,-1).join(', ')+' and '+jobs[jobs.length-1]:jobs[0]);
+    msg+='.';
+    if(where)msg+=' I\'m in '+where+'.';
+    if(what)msg+=' '+what;
+    location.href='sms:'+CONFIG.PHONE+'?&body='+encodeURIComponent(msg);
+    // if no messages app opened (desktop, some in-app browsers), say what to do instead
+    setTimeout(function(){document.getElementById('sent').hidden=false},900);
+  });
+})();
+
+/* ===== Floating text circle: shows after the hero, hides while the form is on screen ===== */
+(function(){
+  var fl=document.getElementById('float');if(!fl)return;
+  if(!CONFIG.FLOAT||!('IntersectionObserver' in window)){fl.remove();return}
+  var pastHero=false,formIn=false;
+  function sync(){var on=pastHero&&!formIn;fl.classList.toggle('on',on);fl.tabIndex=on?0:-1;fl.setAttribute('aria-hidden',on?'false':'true')}
+  new IntersectionObserver(function(es){pastHero=!es[0].isIntersecting;sync()},{threshold:.15}).observe(document.getElementById('hero'));
+  new IntersectionObserver(function(es){formIn=es[0].isIntersecting;sync()},{rootMargin:'-15% 0px -15% 0px'}).observe(document.getElementById('quoteForm'));
+  sync();
+})();
+
+/* ===== Fade-up: everything is visible at rest; only what starts below the first screen rises 12px in ===== */
+(function(){
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches||!('IntersectionObserver' in window))return;
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('below');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+  [].forEach.call(document.querySelectorAll('.rise'),function(el){if(el.getBoundingClientRect().top>innerHeight){el.classList.add('below');io.observe(el)}});
+})();
+</script>
+</body>
+</html>
