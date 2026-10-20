@@ -1,0 +1,26 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "repeating-stripes-gradient",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-20T13:41:43.148Z",
+        "reason": "Ellie's house calm band style (pitch-site calm-photo-style.md item 2, chosen 2026-10-19): faint 3.5% diagonal texture on deep bands"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-20T13:41:43.214Z",
+        "reason": "False positive: detector sees only fixed small UI sizes (13-20px); headings use clamp() 30-80px, so the real scale is 14/16/18/24/48/80"
+      }
+    ]
+  }
+}

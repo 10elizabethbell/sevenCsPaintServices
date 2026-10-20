@@ -14,6 +14,7 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"HousePainter","name":"Seven C's Paint Services LLC","telephone":"+1-732-305-5003","email":"sevencspaint@gmail.com","areaServed":"Toms River, NJ","address":{"@type":"PostalAddress","addressLocality":"Toms River","addressRegion":"NJ","addressCountry":"US"},"url":"https://10elizabethbell.github.io/sevenCsPaintServices/","image":"https://10elizabethbell.github.io/sevenCsPaintServices/og.jpg","sameAs":["https://facebook.com/profile.php?id=61594515396428"]}</script>
 <link rel="icon" href="favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -133,8 +134,9 @@ section{padding:64px 0}
 .ba .knob{position:absolute;top:50%;left:var(--pos);width:48px;height:48px;margin:-24px 0 0 -24px;border-radius:50%;background:var(--brass);color:var(--ink);display:grid;place-items:center;box-shadow:0 6px 18px rgba(6,32,78,.3)}
 .ba .knob svg{width:24px;height:24px}
 .ba .knob:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:50%}
-.tag{position:absolute;top:12px;font:600 13px/1 var(--text);letter-spacing:.03em;color:#fff;background:rgba(6,32,78,.72);padding:7px 10px;border-radius:6px;pointer-events:none}
+.tag{transition:opacity .15s;position:absolute;top:12px;font:600 13px/1 var(--text);letter-spacing:.03em;color:#fff;background:rgba(6,32,78,.72);padding:7px 10px;border-radius:6px;pointer-events:none}
 .tag.l{left:12px}.tag.r{right:12px}
+.ba.lo .tag.l,.ba.hi .tag.r{opacity:0}
 .hint{margin-top:10px;font-size:14px;color:var(--soft)}
 .pair{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .pair figure{margin:0;position:relative;aspect-ratio:356/266;border-radius:18px;overflow:hidden;background:var(--field)}
@@ -142,7 +144,7 @@ section{padding:64px 0}
 .pair .tag{left:10px;top:10px}
 .fb{margin-top:12px;display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:80px;padding:16px 16px 16px 22px;border-radius:20px;background:var(--ink);color:var(--on-dark);text-decoration:none;font:400 clamp(19px,5.2vw,22px)/1.2 var(--display)}
 .fb:hover,.fb:focus-visible{outline:none;box-shadow:none}
-.fb .lbl{display:flex;align-items:center;gap:14px}
+.fb .lbl{display:flex;align-items:center;gap:14px;text-wrap:balance}
 .fb .lbl svg{width:30px;height:30px;flex:none;color:var(--brass)}
 .fb .arrow{background:rgba(255,255,255,.12);color:var(--on-dark)}
 .fb:focus-visible .arrow{background:var(--brass);color:var(--ink);outline:3px solid var(--focus);outline-offset:3px}
@@ -177,12 +179,15 @@ input[type=text]:focus,textarea:focus{outline:none;border-color:var(--focus)}
 form .btn-primary{width:100%}
 form .btn-primary:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
 .after{font-size:14px;color:var(--soft)}
-.sent{color:var(--ink);font-weight:600}
+.sent{color:var(--ink);font-weight:600;display:grid;gap:12px}
+.sent-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.btn-soft{background:var(--field);color:var(--ink);border-color:transparent;padding:0 14px;font-size:17px}
+#msgOut{min-height:0;font-weight:400}
 .sent a{white-space:nowrap;display:inline-block;padding:11px 0;margin:-11px 0}
 @media (max-width:380px){.chips label{padding:0 14px}}
 
 /* ---------- Close ---------- */
-.close .mark{width:200px;height:auto;aspect-ratio:480/296;background:var(--on-dark);-webkit-mask:url(img/logo.webp) center/contain no-repeat;mask:url(img/logo.webp) center/contain no-repeat;margin-bottom:24px}
+.close .mark{width:200px;height:auto;margin-bottom:24px}
 .close .who{margin-top:14px;font-size:clamp(18px,5vw,20px);color:var(--on-dark-soft)}
 .bigtel{display:inline-flex;align-items:center;gap:12px;margin-top:28px;font:400 clamp(30px,9vw,52px)/1 var(--display);text-decoration:none;color:var(--on-dark);min-height:56px;white-space:nowrap}
 .bigtel svg{width:.8em;height:.8em;flex:none;color:var(--brass)}
@@ -213,6 +218,7 @@ footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--on-d
   .tel{font-size:20px}
   section{padding:96px 0}
   .hero-copy{padding-top:104px;padding-bottom:120px}
+  .hero h1{max-width:14ch}
   .promise{max-width:40ch}
   .actions{grid-auto-flow:column;justify-content:start;width:auto}
   .actions .btn{min-width:240px}
@@ -242,6 +248,7 @@ footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--on-d
 input[type=text]:hover,textarea:hover{border-color:var(--focus)}
 .chips label:hover{border-color:var(--focus)}
 form .btn-primary:hover{outline:3px solid var(--focus);outline-offset:3px}
+.btn-soft:hover{outline:3px solid var(--focus);outline-offset:3px}
 .sent a:hover{color:var(--navy)}
 .bigtel:hover{color:var(--brass)}
 footer a:hover{color:var(--brass)}
@@ -260,7 +267,7 @@ THESIS: A small family painting company out of Toms River earns the estimate thr
 OWN-WORLD: The logo's nautical navy (#06204e, "Seven C's" = the seven seas, gulls and waves) on off-white paper, a mid navy (#183a72) band, and one warm brass accent (fills only; #7d5612 as text on light). The hero is their own freshly painted blue panelled wall under the navy. Cal Sans display, system body at 16/1.7.
 STORY: The visitor sees who paints in Toms River, sees the hallway and den they transformed, believes a 29-year painter will treat the house with care, and sends a request for the free estimate.
 FIRST VIEWPORT: Paper header with the navy script logo left and the tap-to-call number top right. Hero over the blue wall photo: eyebrow "Free estimates", "Toms River homes, painted right.", the family/29-years promise, two pill buttons (Schedule your free estimate, See our work).
-FORM: calm-photo band system (calm-photo-style.md) with a photo hero; no concept roll. Runner-up worlds are in HANDOFF.md.
+FORM: calm-photo band system with a photo hero. No concept roll: the calm band style (pitch-site calm-photo-style.md) has been the house default for every pitch site since 2026-10-19, so only the palette, hero photo and copy were chosen. Runner-up worlds for an opt-in signature motion are in HANDOFF.md.
 -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
@@ -295,10 +302,10 @@ FORM: calm-photo band system (calm-photo-style.md) with a photo hero; no concept
       <p class="lede" style="margin-top:16px">We're a small family business, so the people who come out for your estimate are the people who paint. We cover your floors, patch the dings first, and leave every line clean.</p>
     </div>
     <ul class="claims">
-      <li class="rise"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="5" width="22" height="11" rx="3"/><path d="M28 10h4v8H18v5"/><rect x="15" y="23" width="6" height="13" rx="2"/></svg>29 years of experience</li>
+      <li class="rise"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="8" width="28" height="27" rx="4"/><path d="M6 16h28M14 4v7M26 4v7"/><path d="M14 23l4 4 8-8"/></svg>29 years of experience</li>
       <li class="rise"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19L20 6l15 13"/><path d="M9 16v18h22V16"/><path d="M17 34v-9h6v9"/></svg>Family owned and operated</li>
       <li class="rise"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 8h26v18H18l-7 6v-6H7z"/><path d="M14 15h12M14 20h8"/></svg>Local referrals on request</li>
-      <li class="rise"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="5" width="24" height="30" rx="4"/><path d="M14 13h12M14 19h12M14 25h7"/></svg>Free estimates</li>
+      <li class="rise"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="6" width="22" height="9" rx="2"/><path d="M27 10h4v8H17v4"/><path d="M17 22v12"/><path d="M14 34h6"/></svg>Interior and exterior</li>
     </ul>
   </div>
 </section>
@@ -352,7 +359,7 @@ FORM: calm-photo band system (calm-photo-style.md) with a photo hero; no concept
     <h2 id="h-how" class="rise">How it <span class="accent">works.</span></h2>
     <ol class="steps">
       <li class="rise"><div><b>Tell us about the job.</b><span>Use the form below, or call.</span></div></li>
-      <li class="rise"><div><b>Get your free estimate.</b><span>It costs you nothing.</span></div></li>
+      <li class="rise"><div><b>Get your free estimate.</b><span>We look at the job and give you a price.</span></div></li>
       <li class="rise"><div><b>We paint.</b><span>With our lead painter on the job.</span></div></li>
     </ol>
   </div>
@@ -361,9 +368,9 @@ FORM: calm-photo band system (calm-photo-style.md) with a photo hero; no concept
 <section class="on-paper ask" id="ask" aria-labelledby="h-ask">
   <div class="wrap">
     <div class="head rise">
-      <p class="eyebrow">Free estimate</p>
+      <p class="eyebrow">Text or call</p>
       <h2 id="h-ask">Schedule your free estimate</h2>
-      <p class="lede">Recent local referrals are available on request.</p>
+      <p class="lede">Pick what needs painting and add your name. It goes out as a text.</p>
     </div>
     <form id="quoteForm" class="rise" novalidate>
       <fieldset class="field">
@@ -389,7 +396,12 @@ FORM: calm-photo band system (calm-photo-style.md) with a photo hero; no concept
         <textarea id="what" name="what" maxlength="600" placeholder="Which rooms, the outside, colors you have in mind…"></textarea>
       </div>
       <button class="btn btn-primary" type="submit"><svg aria-hidden="true"><use href="#i-chat"/></svg>Text this to Seven C's</button>
-      <p class="sent" id="sent" role="status" hidden>Didn't open your messages? Call us at <a href="tel:+17323055003">732-305-5003</a>.</p>
+      <div class="sent" id="sent" role="status" hidden>
+        <p>Didn't open your messages?</p>
+        <div class="sent-actions"><a class="btn btn-soft" id="openSms" href="sms:+17323055003">Open in Messages</a><button class="btn btn-soft" type="button" id="copyMsg">Copy message</button></div>
+        <textarea id="msgOut" readonly rows="3" aria-label="Your message"></textarea>
+        <p>Or call us at <a href="tel:+17323055003">732-305-5003</a>.</p>
+      </div>
       <p class="after">Opens your messages with this written out.</p>
     </form>
   </div>
@@ -398,7 +410,7 @@ FORM: calm-photo band system (calm-photo-style.md) with a photo hero; no concept
 <section class="on-navy close" id="close" aria-labelledby="h-close">
   <div class="wrap">
     <div class="rise">
-      <div class="mark" role="img" aria-label="Seven C's Paint Services logo"></div>
+      <img class="mark" src="img/logo-white.webp" width="400" height="247" alt="" loading="lazy">
       <h2 id="h-close">Seven C's Paint Services LLC</h2>
       <p class="who">Small, family owned and operated.</p>
       <p class="area">Based in Toms River, NJ. Not sure we cover your town? Call and ask.</p>
@@ -457,7 +469,7 @@ document.documentElement.classList.add('js');
 (function(){
   var ba=document.getElementById('ba');if(!ba)return;
   var knob=ba.querySelector('.knob'),pos=50,start=null,dragging=false;
-  function set(p){pos=Math.max(0,Math.min(100,p));ba.style.setProperty('--pos',pos+'%');knob.setAttribute('aria-valuenow',Math.round(pos));knob.setAttribute('aria-valuetext',Math.round(pos)+'% before')}
+  function set(p){pos=Math.max(0,Math.min(100,p));ba.classList.toggle('lo',pos<20);ba.classList.toggle('hi',pos>80);ba.style.setProperty('--pos',pos+'%');knob.setAttribute('aria-valuenow',Math.round(pos));knob.setAttribute('aria-valuetext',Math.round(pos)+'% before')}
   function at(x){var r=ba.getBoundingClientRect();set((x-r.left)/r.width*100)}
   ba.addEventListener('pointerdown',function(e){
     if(e.pointerType==='mouse'){dragging=true;e.preventDefault();ba.setPointerCapture(e.pointerId);at(e.clientX)}
@@ -491,6 +503,12 @@ document.documentElement.classList.add('js');
     a.addEventListener('click',function(){var c=form.querySelector('input[name=job][value="'+a.getAttribute('data-pick')+'"]');if(c)c.checked=true});
   });
   form.addEventListener('input',function(e){var f=e.target.closest('.field');if(f&&f.classList.contains('bad')&&e.target.value.trim()){f.classList.remove('bad');e.target.setAttribute('aria-invalid','false')}});
+  document.getElementById('copyMsg').addEventListener('click',function(){
+    var t=document.getElementById('msgOut'),b=this;
+    function done(){b.textContent='Copied'}
+    if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(t.value).then(done,function(){t.select();try{document.execCommand('copy');done()}catch(_){}});
+    else{t.select();try{document.execCommand('copy');done()}catch(_){}}
+  });
   form.addEventListener('submit',function(e){
     e.preventDefault();
     var name=val('name'),what=val('what'),where=val('where');
@@ -504,9 +522,11 @@ document.documentElement.classList.add('js');
     msg+='.';
     if(where)msg+=' I\'m in '+where+'.';
     if(what)msg+=' '+what;
-    location.href='sms:'+CONFIG.PHONE+'?&body='+encodeURIComponent(msg);
-    // if no messages app opened (desktop, some in-app browsers), say what to do instead
-    setTimeout(function(){document.getElementById('sent').hidden=false},900);
+    var href='sms:'+CONFIG.PHONE+'?&body='+encodeURIComponent(msg);
+    // show the fallback straight away: in-app browsers can block an sms: redirect that isn't a direct tap
+    document.getElementById('openSms').href=href;document.getElementById('msgOut').value=msg;
+    document.getElementById('sent').hidden=false;
+    location.href=href;
   });
 })();
 
@@ -514,10 +534,13 @@ document.documentElement.classList.add('js');
 (function(){
   var fl=document.getElementById('float');if(!fl)return;
   if(!CONFIG.FLOAT||!('IntersectionObserver' in window)){fl.remove();return}
-  var pastHero=false,formIn=false;
-  function sync(){var on=pastHero&&!formIn;fl.classList.toggle('on',on);fl.tabIndex=on?0:-1;fl.setAttribute('aria-hidden',on?'false':'true')}
+  var pastHero=false,formIn=false,hits=new Set();
+  function sync(){var on=pastHero&&!formIn&&!hits.size;fl.classList.toggle('on',on);fl.tabIndex=on?0:-1;fl.setAttribute('aria-hidden',on?'false':'true')}
   new IntersectionObserver(function(es){pastHero=!es[0].isIntersecting;sync()},{threshold:.15}).observe(document.getElementById('hero'));
   new IntersectionObserver(function(es){formIn=es[0].isIntersecting;sync()},{rootMargin:'-15% 0px -15% 0px'}).observe(document.getElementById('quoteForm'));
+  // step aside while a row arrow or the Facebook arrow is in the bottom strip where the circle sits
+  var strip=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)hits.add(e.target);else hits.delete(e.target)});sync()},{rootMargin:'-'+Math.max(0,innerHeight-110)+'px 0px 0px 0px'});
+  [].forEach.call(document.querySelectorAll('.row .arrow,.fb .arrow,.ba .knob'),function(a){strip.observe(a)});
   sync();
 })();
 
